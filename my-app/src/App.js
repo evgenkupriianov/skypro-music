@@ -3,7 +3,7 @@ import './App.css';
 
 import NavBar from './components/NavBar.jsx'; 
 import CenterBlock from './components/CenterBlock'; 
-import Sidebar from './components/Sidebar'; 
+import Sidebar from './components/SideBar'; 
 import PlayerBar from './components/PlayerBar'; 
 import Footer from './components/Footer'; 
 
