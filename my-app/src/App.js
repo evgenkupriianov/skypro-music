@@ -1,8 +1,8 @@
 import "./styles/style.css";
-import CenterBlock from "./components/CenterBlock/CenterBlock";
-import Sidebar from "./components/sidebar/sidebar";
-import MusicPlayer from "./components/musicPlayer/musicPlayer";
-import MainNav from "./components/mainNav/mainNav";
+import CenterBlock from "../components/CenterBlock";
+import Sidebar from "../components/sidebar";
+import MusicPlayer from "../components/musicPlayer";
+import MainNav from "../components/mainNav";
 
 function App() {
   return (
