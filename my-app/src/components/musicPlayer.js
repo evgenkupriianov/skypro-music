@@ -1,4 +1,4 @@
-import sprite from "../img/icon/sprite.svg";
+import sprite from "./img/icon/sprite.svg";
 
 function MusicPlayer() {
   return (

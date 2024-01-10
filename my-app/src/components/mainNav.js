@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../img/logo.png";
+import logo from "./img/logo.png";
 import Burger from "./burger";
 import BurgerMenu from "./burgerMenu";
 
