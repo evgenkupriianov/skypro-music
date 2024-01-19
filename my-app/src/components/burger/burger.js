@@ -1,3 +1,5 @@
+import './burger.css'
+
 function Burger({ onClick }) {
     return (
       <div onClick={onClick} className="nav__burger burger">

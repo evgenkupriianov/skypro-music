@@ -1,5 +1,6 @@
 import PlaylistItem from "./playlistitem";
 import FilterBlock from "./filterBlock";
+import 'CenterBlock.css'
 
 function CenterBlock() {
   return (

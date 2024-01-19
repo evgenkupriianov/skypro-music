@@ -1,6 +1,7 @@
 import { useState } from "react";
 import FilterButtons from "./filterButtons";
 import FilterOptions from "./filterOptions";
+import './filterBlock.css'
 
 function FilterBlock() {
   const [visible, setVisible] = useState(false);

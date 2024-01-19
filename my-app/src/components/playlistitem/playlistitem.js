@@ -1,3 +1,5 @@
+import './playlistitem.css'
+
 function PlaylistItem() {
     return (
       <div className="content__playlist playlist">

@@ -1,3 +1,5 @@
+import './burgerMenu'
+
 function BurgerMenu() {
 
     return (

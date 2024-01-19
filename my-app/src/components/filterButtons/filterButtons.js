@@ -1,3 +1,5 @@
+import './filterButtons.css'
+
 function FilterButtons({ onClick }) {
     return (
       <>

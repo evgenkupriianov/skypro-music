@@ -1,3 +1,4 @@
+import './musicPlayer.css'
 
 function MusicPlayer() {
   return (

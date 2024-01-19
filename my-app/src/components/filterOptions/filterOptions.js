@@ -1,3 +1,5 @@
+import './filterOptions.css'
+
 function FilterOptions() {
     return (
       <div>
