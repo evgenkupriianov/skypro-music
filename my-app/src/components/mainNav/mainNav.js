@@ -1,8 +1,8 @@
 import { useState } from "react";
-import logo from "../img/logo.png";
-import Burger from "./burger";
-import BurgerMenu from "./burgerMenu";
-import './MainNav.css'
+import logo from './img/logo.png';
+import Burger from "../burger/burger";
+import BurgerMenu from "../burgerMenu/burgerMenu";
+import './mainNav.css'
 function MainNav() {
   const [visible, setVisible] = useState(false);
   const toggleVisibility = () => setVisible(!visible);

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import FilterButtons from "./filterButtons";
-import FilterOptions from "./filterOptions";
+import FilterButtons from "../filterButtons/filterButtons";
+import FilterOptions from "../filterOptions/filterOptions";
 import './filterBlock.css'
 
 function FilterBlock() {

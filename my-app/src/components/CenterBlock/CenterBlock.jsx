@@ -1,6 +1,6 @@
-import PlaylistItem from "./playlistitem";
-import FilterBlock from "./filterBlock";
-import 'CenterBlock.css'
+import PlaylistItem from "../playlistitem/playlistitem";
+import FilterBlock from "../filterBlock/filterBlock";
+import './CenterBlock.css'
 
 function CenterBlock() {
   return (
