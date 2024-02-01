@@ -1,4 +1,4 @@
-import './burgerMenu'
+import './burgerMenu.css'
 
 function BurgerMenu() {
 

@@ -1,13 +1,19 @@
-import './burger.css'
+import './burger.css';
+import React from "react";
+const {useState} = React;
 
-function Burger({ onClick }) {
-    return (
-      <div onClick={onClick} className="nav__burger burger">
-        <span className="burger__line" />
-        <span className="burger__line" />
-        <span className="burger__line" />
+
+export default function Burger() {
+  const [visible, setVisible] = useState(true);
+  const activeBurger = () => setVisible(!visible);
+  return (
+    <nav className="main__nav nav">
+        <div className="nav__burger burger" onClick={activeBurger}>
+         <span className="burger__line"></span>
+         <span className="burger__line"></span>
+         <span className="burger__line"></span>
       </div>
-    );
-  }
-  
-  export default Burger;
+     {visible ? <burgerMenu /> : ""}
+    </nav>
+  );
+}

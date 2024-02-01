@@ -7,7 +7,7 @@ function Sidebar() {
   return (
     <div className="main__sidebar sidebar">
       <div className="sidebar__personal">
-        <p className="sidebar__personal-name">Sergey.Ivanov</p>
+        <p className="sidebar__personal-name">Evgeniy.Kupriianov</p>
         <div className="sidebar__avatar" />
       </div>
       <div className="sidebar__block">

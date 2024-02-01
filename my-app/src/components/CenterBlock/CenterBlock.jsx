@@ -25,6 +25,10 @@ function CenterBlock() {
       </div>
     </div>
   );
+
+
+  
 }
+
 
 export default CenterBlock;
