@@ -90,3 +90,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
 }
+.main__sidebar {
+    max-width: 418px;
+    padding: 20px 90px 20px 78px;
+}

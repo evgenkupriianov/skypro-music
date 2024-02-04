@@ -1,5 +1,6 @@
 import React from "react";
 import './burgerMenu.css'
+import '../../styles/style.css'
 
 export default function BurgerMenu() {
 

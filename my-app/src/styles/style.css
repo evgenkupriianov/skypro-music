@@ -99,30 +99,6 @@ body {
     justify-content: space-between;
 }
 
-
-
-
-.main__sidebar {
-    max-width: 418px;
-    padding: 20px 90px 20px 78px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .search__text::-webkit-input-placeholder {
     background-color: transparent;
     color: #FFFFFF;
