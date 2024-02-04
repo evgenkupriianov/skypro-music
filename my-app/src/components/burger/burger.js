@@ -1,11 +1,11 @@
+import React, {useState, useEffect} from 'react';
 import BurgerMenu from "../burgerMenu/burgerMenu";
 import './burger.css';
-import React from "react";
-const {useState} = React;
+
 
 
 export default function Burger() {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
   const activeBurger = () => setVisible(!visible);
   return (
     <nav className="main__nav nav">
