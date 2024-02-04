@@ -9,12 +9,12 @@ function CenterBlock() {
         <svg className="search__svg">
           <use xlinkHref="img/icon/sprite.svg#icon-search" />
         </svg>
-        <input
+       <input
           className="search__text"
           type="search"
           placeholder="Поиск"
           name="search"
-        />
+       />
       </div>
       <h2 className="centerblock__h2">Треки</h2>
       <div className="centerblock__filter filter">

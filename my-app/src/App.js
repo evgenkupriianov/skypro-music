@@ -1,3 +1,4 @@
+import React from "react";
 import "./styles/style.css";
 import CenterBlock from "./components/CenterBlock/CenterBlock";
 import Sidebar from "./components/sidebar/sidebar";

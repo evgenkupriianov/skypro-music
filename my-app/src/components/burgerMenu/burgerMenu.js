@@ -1,6 +1,7 @@
+import React from "react";
 import './burgerMenu.css'
 
-function BurgerMenu() {
+export default function BurgerMenu() {
 
     return (
         <div className="nav__menu menu">
@@ -24,5 +25,3 @@ function BurgerMenu() {
         </div>
     );
   }
-
-  export default BurgerMenu

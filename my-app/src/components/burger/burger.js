@@ -1,3 +1,4 @@
+import BurgerMenu from "../burgerMenu/burgerMenu";
 import './burger.css';
 import React from "react";
 const {useState} = React;
@@ -13,7 +14,7 @@ export default function Burger() {
          <span className="burger__line"></span>
          <span className="burger__line"></span>
       </div>
-     {visible ? <burgerMenu /> : ""}
+     {visible ? <BurgerMenu /> : " "}
     </nav>
   );
 }
