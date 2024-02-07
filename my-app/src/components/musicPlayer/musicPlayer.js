@@ -10,7 +10,7 @@ function MusicPlayer() {
             <div className="player__controls">
               <div className="player__btn-prev">
                 <svg className="player__btn-prev-svg" alt="prev">
-                  <use xlinkHref="./img/icon/sprite.svg#icon-prev"></use>
+                  <use xlinkHref="/img/icon/sprite.svg#icon-prev"></use>
                 </svg>
               </div>
               <div className="player__btn-play _btn">
