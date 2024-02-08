@@ -37,6 +37,7 @@ function PlaylistItem() {
         </div>
       </div>
     );
+    
   }
   
   export default PlaylistItem;

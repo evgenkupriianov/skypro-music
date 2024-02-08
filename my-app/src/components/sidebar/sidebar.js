@@ -1,6 +1,7 @@
-import sidebarImg from "../../img/playlist01.png";
-import sidebarImg2 from "../../img/playlist02.png";
-import sidebarImg3 from "../../img/playlist03.png";
+import React from "react";
+import sidebarImg from "../../playlist01.png";
+import sidebarImg2 from "../../playlist02.png";
+import sidebarImg3 from "../../playlist03.png";
 import './sidebar.css'
 
 function Sidebar() {
