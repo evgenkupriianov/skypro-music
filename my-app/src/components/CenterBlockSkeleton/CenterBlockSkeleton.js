@@ -1,5 +1,5 @@
 import PlaylistItem from "../playlistitem/playlistitem";
-import FilterBlock from "../filterBlock/filterBlock";
+import Filter from "../filter/filter";
 
 export default function CenterBlockSkeleton() {
     return (
@@ -17,7 +17,7 @@ export default function CenterBlockSkeleton() {
           </div>
           <h2 className="centerblock__h2">Треки</h2>
           <div className="centerblock__filter filter">
-            <FilterBlock />
+            <Filter />
           </div>
         <div className="centerblock__content">
           <PlaylistItem />
