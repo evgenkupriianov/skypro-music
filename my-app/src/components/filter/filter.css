@@ -10,6 +10,7 @@
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 51px;
+    gap: 10px;
 }
 .filter__title {
     font-style: normal;
@@ -26,6 +27,7 @@
     border: 1px solid #FFFFFF;
     border-radius: 60px;
     padding: 6px 20px;
+    
 }
 ._btn-text:active {
     border-color: #AD61FF;

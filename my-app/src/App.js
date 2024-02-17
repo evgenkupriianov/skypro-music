@@ -9,7 +9,6 @@ import MusicPlayerSkeleton from "./components/musicPlayerSkeleton/musicPlayerSke
 import MainNav from "./components/mainNav/mainNav";
 import loadingDelay from "./components/loading/loading";
 
-let loading = true;
 
 function App() {
 
@@ -23,7 +22,7 @@ function App() {
     <div className="wrapper">
       <div className="container">
         <main className="main">
-          <mainNav />
+          <MainNav />
           {load ? <CenterBlockSkeleton/> : <CenterBlock/>}
           {load ? <SidebarSkeleton/> : <Sidebar/>}
         </main>
