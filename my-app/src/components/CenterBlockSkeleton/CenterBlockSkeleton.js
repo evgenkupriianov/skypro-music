@@ -1,30 +1,17 @@
 import React from "react";
-import Filter from "../filter/filter";
-import Palaylistitem from "../playlistitem/playlistitem";
 
-
-export default function TrackListSkeleton() {
+const skeletonCount = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+export default function CenterBlockSkeleton() {
   return (
-    <div className="main__centerblock centerblock">
-      <h2 className="centerblock__h2">Треки</h2>
-      <Filter />
-      <div className="centerblock__content">
-        <Palaylistitem />
-        <div className="content__playlist playlist">
-          <div className="playlist__item">
-            <img src="/img/skeleton/1107x51.svg"></img>
-            <img src="/img/skeleton/1107x51.svg"></img>
-            <img src="/img/skeleton/1107x51.svg"></img>
-            <img src="/img/skeleton/1107x51.svg"></img>
-            <img src="/img/skeleton/1107x51.svg"></img>
-            <img src="/img/skeleton/1107x51.svg"></img>
-            <img src="/img/skeleton/1107x51.svg"></img>
-            <img src="/img/skeleton/1107x51.svg"></img>
-            <img src="/img/skeleton/1107x51.svg"></img>
-            <img src="/img/skeleton/1107x51.svg"></img>
-            <img src="/img/skeleton/1107x51.svg"></img>
-          </div>
-        </div>
+    <div className="content__playlist playlist">
+      <div className="playlist__item">
+        {skeletonCount.map((id) => (
+          <img
+            src="/img/skeleton/1107x51.svg"
+            key={id}
+            alt="Скелетон трека"
+          ></img>
+        ))}
       </div>
     </div>
   );

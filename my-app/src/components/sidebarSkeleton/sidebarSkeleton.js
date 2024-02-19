@@ -1,28 +1,18 @@
 import React from "react";
+const skeletonCount = [1, 2, 3];
+
 export default function SidebarSkeleton() {
   return (
-    <div className="main__sidebar sidebar">
-      <div className="sidebar__personal">
-        <p className="sidebar__personal-name">Evgeniy.Kupriianov</p>
-        <div className="sidebar__icon">
-          <svg alt="logout">
-            <use xlinkHref="img/icon/sprite.svg#logout"></use>
-          </svg>
+    <div className="sidebar__list">
+      {skeletonCount.map((id) => (
+        <div className="sidebar__item">
+          <img
+            src="/img/skeleton/250x150.svg"
+            key={id}
+            alt="Скелетон плейлиста подборки"
+          ></img>
         </div>
-      </div>
-      <div className="sidebar__block">
-        <div className="sidebar__list">
-          <div className="sidebar__item">
-            <img src="/img/skeleton/250x150.svg"></img>
-          </div>
-          <div className="sidebar__item">
-          <img src="/img/skeleton/250x150.svg"></img>
-          </div>
-          <div className="sidebar__item">
-          <img src="/img/skeleton/250x150.svg"></img>
-          </div>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }

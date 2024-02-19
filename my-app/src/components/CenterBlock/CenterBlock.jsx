@@ -1,8 +1,11 @@
-import Playlistitem from "../playlistitem/playlistitem";
+
 import Filter from "../filter/filter";
 import './CenterBlock.css'
+import PlaylistItem from "../playlistitem/playlistitem";
+import CenterBlockSkeleton from "../CenterBlockSkeleton/CenterBlockSkeleton";
 
-function CenterBlock() {
+function CenterBlock({load}) {
+  
   return (
     <div className="main__centerblock centerblock">
       <div className="centerblock__search search">
@@ -21,7 +24,7 @@ function CenterBlock() {
         <Filter />
       </div>
       <div className="centerblock__content">
-        <Playlistitem />
+      {load ? <CenterBlockSkeleton /> : <PlaylistItem />}
       </div>
     </div>
   );
