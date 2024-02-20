@@ -1,6 +1,7 @@
-import "../filter/filter.css"
+import "../filter/filter.css";
 export default function GenrePopUp() {
-    return (
+  return (
+    <div className="wrapper_pop-up">
       <div className="filter__pop-up">
         <ul className="filter__pop-up_list">
           <li className="filter__pop-up_item">Blues</li>
@@ -17,5 +18,6 @@ export default function GenrePopUp() {
           <li className="filter__pop-up_item">Punk</li>
         </ul>
       </div>
-    );
-  }
+    </div>
+  );
+}

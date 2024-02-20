@@ -1,6 +1,7 @@
-import "../filter/filter.css"
+import "../filter/filter.css";
 export default function SingerPopUp() {
-    return (
+  return (
+    <div className="wrapper_pop-up">
       <div className="filter__pop-up">
         <ul className="filter__pop-up_list">
           <li className="filter__pop-up_item">Nero</li>
@@ -22,5 +23,6 @@ export default function SingerPopUp() {
           <li className="filter__pop-up_item">minthaze</li>
         </ul>
       </div>
-    );
-  }
+    </div>
+  );
+}
