@@ -1,4 +1,3 @@
-
 import Filter from "../filter/filter";
 import './CenterBlock.css'
 import PlaylistItem from "../playlistitem/playlistitem";
