@@ -96,6 +96,7 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    background-color: #181818;
 }
 
 .search__text::-webkit-input-placeholder {
@@ -147,7 +148,6 @@ body {
 .filter__button:not(:last-child) {
     margin-right: 10px;
 }
-
 
 
 
