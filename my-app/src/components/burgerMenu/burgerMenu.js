@@ -1,28 +1,30 @@
 import React from "react";
-import './burgerMenu.css'
 import '../../styles/style.css'
+import * as S from './burgerMenu.styles'
+
+
 
 export default function BurgerMenu() {
 
     return (
-        <div className="nav__menu menu">
-          <ul className="menu__list">
-            <li className="menu__item">
-              <a href="http://" className="menu__link">
+        <S.NavMenu>
+          <S.MenuList>
+            <S.MenuItem>
+              <S.MenuLink href="http://">
                 Главное
-              </a>
-            </li>
-            <li className="menu__item">
-              <a href="http://" className="menu__link">
+              </S.MenuLink>
+            </S.MenuItem>
+            <S.MenuItem>
+              <S.MenuLink href="http://">
                 Мой плейлист
-              </a>
-            </li>
-            <li className="menu__item">
-              <a href="http://" className="menu__link">
+              </S.MenuLink>
+            </S.MenuItem>
+            <S.MenuItem>
+              <S.MenuLink href="http://">
                 Войти
-              </a>
-            </li>
-          </ul>
-        </div>
+              </S.MenuLink>
+            </S.MenuItem>
+          </S.MenuList>
+        </S.NavMenu>
     );
   }
