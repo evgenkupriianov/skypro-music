@@ -1,20 +1,18 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import BurgerMenu from "../burgerMenu/burgerMenu";
-import './burger.css';
-
-
+import * as S from './burger.styles'
 
 export default function Burger() {
   const [visible, setVisible] = useState(false);
   const activeBurger = () => setVisible(!visible);
   return (
-    <nav className="main__nav nav">
-        <div className="nav__burger burger" onClick={activeBurger}>
-         <span className="burger__line"></span>
-         <span className="burger__line"></span>
-         <span className="burger__line"></span>
-      </div>
+    <S.MainNav>
+        <S.NavBurger onClick={activeBurger}>
+         <S.Burgerline></S.Burgerline>
+         <S.Burgerline></S.Burgerline>
+         <S.Burgerline></S.Burgerline>
+      </S.NavBurger>
      {visible ? <BurgerMenu /> : " "}
-    </nav>
+    </S.MainNav>
   );
 }
