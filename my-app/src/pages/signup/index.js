@@ -1,10 +1,10 @@
-import LoginWindow from "../../components/login/loginWindow";
+import SignUpWindow from "../../components/signup/signupWindow";
 import { EasyBackground } from "../../components/signup/stylesSup";
 
-export const LoginPage = () => {
+export const SignUpPage = () => {
   return (
     <EasyBackground>
-      <LoginWindow />
+      <SignUpWindow />
     </EasyBackground>
   );
 };

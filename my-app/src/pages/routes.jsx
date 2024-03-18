@@ -1,20 +1,31 @@
 import { Routes, Route } from "react-router-dom";
-import { NotFound } from ".//not-found";
+import { NotFound } from "./not-found";
 import { MainPage } from "./main";
 import { LoginPage } from "./login";
 import { FavoritesPage } from "./favorites";
-import { RegisterPage } from "./register";
+import { SignUpPage } from "./signup";
 import { CategoryPage } from "./category";
 
 export const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="*" element={<NotFound/>} />
-      <Route path="/login" element={<LoginPage/>} />
-      <Route path="/register" element={<RegisterPage/>} />
-      <Route path="/favorites" element={<FavoritesPage/>} />
-      <Route path="/category" element={<CategoryPage/>} />
-      <Route path="/" element={<MainPage/>} />
+      {/* Главная страница */}
+      <Route path="/" element={<MainPage />} />
+
+      {/* Вход в приложение */}
+      <Route path="/login" element={<LoginPage />} />
+
+      {/* Регистрация */}
+      <Route path="/signup" element={<SignUpPage />} />
+
+      {/* ??? */}
+      <Route path="/favorites" element={<FavoritesPage />} />
+
+      {/* ??? */}
+      <Route path="/category/:id" element={<CategoryPage />} />
+
+      {/* Страница не найдена */}
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };

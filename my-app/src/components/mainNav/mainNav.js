@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../../logo.png";
+import { Link } from "react-router-dom";
 import Burger from "../burger/burger";
 import BurgerMenu from "../burgerMenu/burgerMenu";
 import * as S from './MainNav.Stales'
@@ -12,7 +12,9 @@ function MainNav() {
   return (
     <S.MainNav>
       <S.NavLogo>
-        <S.LogoImage src={logo} alt="logo" />
+      <Link to="/">
+          <S.LogoImage src="img/logo.png" alt="logo" />
+        </Link>
       </S.NavLogo>
       <Burger onClick={toggleVisibility} />
       {visible && <BurgerMenu />}

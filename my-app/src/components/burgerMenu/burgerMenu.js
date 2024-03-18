@@ -1,7 +1,8 @@
 import React from "react";
-import '../../styles/style.css'
-import * as S from './burgerMenu.styles'
-
+import './stylesBm.css';
+import '../../styles/style.css';
+import * as S from './burgerMenu.styles';
+import { Link } from "react-router-dom";
 
 
 export default function BurgerMenu() {
@@ -10,19 +11,13 @@ export default function BurgerMenu() {
         <S.NavMenu>
           <S.MenuList>
             <S.MenuItem>
-              <S.MenuLink href="http://">
-                Главное
-              </S.MenuLink>
+            <Link className="MenuLink" to="/">Главное</Link>
             </S.MenuItem>
             <S.MenuItem>
-              <S.MenuLink href="http://">
-                Мой плейлист
-              </S.MenuLink>
+            <Link className="MenuLink" to="/favorites">Мой плейлист</Link>
             </S.MenuItem>
             <S.MenuItem>
-              <S.MenuLink href="http://">
-                Войти
-              </S.MenuLink>
+            <Link className="MenuLink" to="/login">Войти</Link>
             </S.MenuItem>
           </S.MenuList>
         </S.NavMenu>
