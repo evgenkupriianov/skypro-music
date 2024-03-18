@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const ContentPlaylist = styled.div`
+  scroll-behavior: auto;
+  height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

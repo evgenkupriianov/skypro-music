@@ -19,6 +19,7 @@ export const BarContent = styled.div`
 `;
 
 export const BarPlayerProgress = styled.div`
+
   width: 100%;
   height: 5px;
   background: #2e2e2e;

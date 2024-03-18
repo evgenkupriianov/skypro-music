@@ -6,7 +6,7 @@ import Sidebar from "../../components/sidebar/sidebar";
 import MusicPlayer from "../../components/musicPlayer/musicPlayer";
 import MusicPlayerSkeleton from "../../components/musicPlayerSkeleton/musicPlayerSkeleton";
 import MainNav from "../../components/mainNav/mainNav";
-import { AppRoutes } from "../../pages/routes.jsx";
+import { AppRoutes } from "../../pages/routes";
 
 export const MainPage = () => {
   // Псевдозагрузка
@@ -20,7 +20,6 @@ export const MainPage = () => {
 
   return (
     <div className="wrapper">
-      <AppRoutes/>
       <div className="container">
         <main className="main">
           <MainNav />
