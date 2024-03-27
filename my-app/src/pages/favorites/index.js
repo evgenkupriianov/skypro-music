@@ -1,33 +1,25 @@
-import * as S from "../../styles/styles.js";
-import { useEffect, useState } from "react";
-import MusicPlayer from "../../components/musicPlayer/musicPlayer.js";
-import MusicPlayerSkeleton from "../../components/musicPlayerSkeleton/musicPlayerSkeleton.js";
-import Sidebar from "../../components/sidebar/sidebar.js";
-import SidebarSkeleton from "../../components/sidebarSkeleton/sidebarSkeleton.js";
-import CenterBlockSkeleton from "../../components/CenterBlockSkeleton/CenterBlockSkeleton.js";
-import CenterBlock from "../../components/CenterBlock/CenterBlock.js"
-import Burger from "../../components/burger/burger.js"
-import loadingDelay from "../../components/loading";
-
+import React from "react";
+import * as S from "../../styles.js";
+import AudioPlayer from "../../components/audioPlayer/audioPlayer.jsx";
+import NavMenu from "../../components/navMenu/navMenu.jsx";
+import Sidebar from "../../components/sidebar/sidebar.jsx";
+import FavoritesTrackList from "../../components/favorites/favoritesTrackList.jsx";
 
 
 export const FavoritesPage = () => {
-
-  // Псевдозагрузка
-  const [load, setLoad] = useState(true);
-  useEffect(() => {
-    loadingDelay(load, setLoad, 2000);
-  }, []);
-
   return (
     <S.Wrapper>
       <S.Container>
         <S.Main>
-          <Burger />
-          {load ? <CenterBlockSkeleton /> : <CenterBlock/>}
-          {load ? <SidebarSkeleton /> : <Sidebar />}
+          <NavMenu />
+
+          <FavoritesTrackList />
+
+          <Sidebar />
         </S.Main>
-        {load ? <MusicPlayerSkeleton /> : <MusicPlayer />}
+
+        <AudioPlayer />
+
         <footer className="footer"></footer>
       </S.Container>
     </S.Wrapper>

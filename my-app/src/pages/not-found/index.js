@@ -1,14 +1,14 @@
-import NotFoundError from "../../components/notFound.js/notFound";
-import * as S from "../../pages/styles";
-import Burger from "../../components/burger/burger";
-import AudioPlayerSkeleton from "../../components/musicPlayerSkeleton/musicPlayerSkeleton.js";
+import NotFoundError from "../../components/notFound/notFound";
+import * as S from "../../styles.js";
+import NavMenu from "../../components/navMenu/navMenu.jsx";
+import AudioPlayerSkeleton from "../../components/skeletons/audioPlayerSkeleton.jsx";
 
 export const NotFound = () => {
   return (
     <S.Wrapper>
       <S.Container>
         <S.Main>
-          <Burger />
+          <NavMenu />
           <NotFoundError />
         </S.Main>
         <AudioPlayerSkeleton />

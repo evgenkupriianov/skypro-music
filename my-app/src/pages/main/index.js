@@ -1,34 +1,54 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import "../../styles/App.css";
-import CenterBlock from "../../components/CenterBlock/CenterBlock";
-import Sidebar from "../../components/sidebar/sidebar";
-import MusicPlayer from "../../components/musicPlayer/musicPlayer";
-import MusicPlayerSkeleton from "../../components/musicPlayerSkeleton/musicPlayerSkeleton";
-import MainNav from "../../components/mainNav/mainNav";
-import { AppRoutes } from "../../pages/routes";
+import * as S from "../../styles.js";
+import { useEffect, useState } from "react";
+import AudioPlayer from "../../components/audioPlayer/audioPlayer.jsx";
+import AudioPlayerSkeleton from "../../components/skeletons/audioPlayerSkeleton.jsx";
+import NavMenu from "../../components/navMenu/navMenu.jsx";
+import Sidebar from "../../components/sidebar/sidebar.jsx";
+import SidebarSkeleton from "../../components/skeletons/sidebarSkeleton.jsx";
+import TrackList from "../../components/tracklist/trackList.jsx";
+import TrackListSkeleton from "../../components/skeletons/trackListSkeleton.jsx";
+import getAllTracks from "../../components/API/api.js";
 
-export const MainPage = () => {
-  // Псевдозагрузка
+export const MainPage = ({ activePlayer, setActivePlayer }) => {
+
+  // Загрузка всех треков из API
   const [load, setLoad] = useState(true);
+  const [tracks, setTracks] = useState([]);
+  const [error, setError] = useState(null)
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoad(false);
-    }, 2000);
+    getAllTracks()
+      .then((data) => {
+        setTracks(data);
+        setLoad(false);
+      })
+      .catch((err) => {
+        alert(err)
+        setLoad(false);
+        setError(err)
+      });
   }, []);
 
   return (
-    <div className="wrapper">
-      <div className="container">
-        <main className="main">
-          <MainNav />
-          <CenterBlock load={load}/>
-          <Sidebar load={load}/>
-        </main>
-        {load ? <MusicPlayerSkeleton /> : <MusicPlayer />}
+    <S.Wrapper>
+      <S.Container>
+        <S.Main>
+          <NavMenu />
+          {load ? (
+            <TrackListSkeleton />
+          ) : (
+            <TrackList tracks={tracks} setActivePlayer={setActivePlayer} error={error}/>
+          )}
+          {load ? <SidebarSkeleton /> : <Sidebar />}
+        </S.Main>
+        {load ? (
+          <AudioPlayerSkeleton />
+        ) : (
+          <AudioPlayer activePlayer={activePlayer} />
+        )}
         <footer className="footer"></footer>
-      </div>
-    </div>
+      </S.Container>
+    </S.Wrapper>
   );
-}
+};

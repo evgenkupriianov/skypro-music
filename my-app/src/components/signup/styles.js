@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const LoginContainer = styled.form`
+export const LoginContainer = styled.div`
   width: 366px;
   height: 439px;
   border-radius: 12px;

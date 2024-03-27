@@ -1,5 +1,5 @@
-import SignUpWindow from "../../components/signup/signupWindow";
-import { EasyBackground } from "../../components/signup/stylesSup";
+import SignUpWindow from "../../components/signup/singupWindow";
+import { EasyBackground } from "../../styles";
 
 export const SignUpPage = () => {
   return (
