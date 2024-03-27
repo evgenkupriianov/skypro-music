@@ -1,12 +1,13 @@
 import React from "react";
+import * as S from "../musicPlayer/MusicPlayer.styles";
 export default function MusicPlayerSkeleton() {
     return (
-      <div className="bar">
-        <div className="bar__content">
-          <div className="bar__player-progress"></div>
-          <div className="bar__player-block">
-            <div className="bar__player player">
-              <div className="player__controls">
+      <S.Bar>
+        <S.BarContent>
+          <S.BarPlayerProgress></S.BarPlayerProgress>
+          <S.BarPlayerBlock>
+            <S.BarPlayer>
+              <S.PlayerControls>
                 <div className="player__btn-prev">
                   <svg className="player__btn-prev-svg" alt="prev">
                     <use xlinkHref="img/icon/sprite.svg#icon-prev"></use>
@@ -32,21 +33,21 @@ export default function MusicPlayerSkeleton() {
                     <use xlinkHref="img/icon/sprite.svg#icon-shuffle"></use>
                   </svg>
                 </div>
-              </div>
+              </S.PlayerControls>
   
-              <div className="player__track-play track-play">
-                <div className="track-play__contain">
+              <S.PlayerTrackPlay>
+                <S.TrackPlayContain>
                   <img src="/img/skeleton/122x51.svg"></img>
-                </div>
-              </div>
-            </div>
-            <div className="bar__volume-block volume">
-              <div className="volume__content">
-                <div className="volume__image">
-                  <svg className="volume__svg" alt="volume">
+                </S.TrackPlayContain>
+              </S.PlayerTrackPlay>
+            </S.BarPlayer>
+            <S.BarVolumeBlock>
+              <S.VolumeContent>
+                <S.VolumeImage>
+                  <S.VolumeSvg alt="volume">
                     <use xlinkHref="img/icon/sprite.svg#icon-volume"></use>
-                  </svg>
-                </div>
+                  </S.VolumeSvg>
+                </S.VolumeImage>
                 <div className="volume__progress _btn">
                   <input
                     className="volume__progress-line _btn"
@@ -54,10 +55,10 @@ export default function MusicPlayerSkeleton() {
                     name="range"
                   />
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </S.VolumeContent>
+            </S.BarVolumeBlock>
+          </S.BarPlayerBlock>
+        </S.BarContent>
+      </S.Bar>
     );
   }

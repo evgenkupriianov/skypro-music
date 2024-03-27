@@ -1,13 +1,15 @@
 import './musicPlayer.css'
+import * as S from "./MusicPlayer.styles";
+
 
 function MusicPlayer() {
   return (
-    <div className="bar">
-      <div className="bar__content">
-        <div className="bar__player-progress" />
-        <div className="bar__player-block">
-          <div className="bar__player player">
-            <div className="player__controls">
+    <S.Bar>
+      <S.BarContent>
+       <S.BarPlayerProgress />
+         <S.BarPlayerBlock>
+          <S.BarPlayer>
+            <S.PlayerControls>
               <div className="player__btn-prev">
                 <svg className="player__btn-prev-svg" alt="prev">
                   <use xlinkHref="/img/icon/sprite.svg#icon-prev"></use>
@@ -33,48 +35,48 @@ function MusicPlayer() {
                   <use xlinkHref="/img/icon/sprite.svg#icon-shuffle"></use>
                 </svg>
               </div>
-            </div>
+            </S.PlayerControls>
 
-            <div className="player__track-play track-play">
-              <div className="track-play__contain">
-                <div className="track-play__image">
-                  <svg className="track-play__svg" alt="music">
+            <S.PlayerTrackPlay>
+              <S.TrackPlayContain>
+                <S.TrackPlayImage>
+                  <S.TrackPlaySvg alt="music">
                     <use xlinkHref="/img/icon/sprite.svg#icon-note"></use>
-                  </svg>
-                </div>
-                <div className="track-play__author">
-                  <a className="track-play__author-link" href="http://">
+                  </S.TrackPlaySvg>
+                </S.TrackPlayImage>
+                <S.TrackPlayAuthor>
+                  <S.TrackPlayAuthorLink href="http://">
                     Ты та...
-                  </a>
-                </div>
-                <div className="track-play__album">
-                  <a className="track-play__album-link" href="http://">
+                  </S.TrackPlayAuthorLink>
+                </S.TrackPlayAuthor>
+                <S.TrackPlayAlbum>
+                  <S.TrackPlayAlbumLink href="http://">
                     Баста
-                  </a>
-                </div>
-              </div>
+                  </S.TrackPlayAlbumLink>
+                </S.TrackPlayAlbum>
+              </S.TrackPlayContain>
 
-              <div className="track-play__like-dis">
+              <S.TrackPlayLikeDis>
                 <div className="track-play__like _btn-icon">
-                  <svg className="track-play__like-svg" alt="like">
+                  <S.TrackPlayLikeSvg alt="like">
                     <use xlinkHref="/img/icon/sprite.svg#icon-like"></use>
-                  </svg>
+                  </S.TrackPlayLikeSvg>
                 </div>
                 <div className="track-play__dislike _btn-icon">
-                  <svg className="track-play__dislike-svg" alt="dislike">
+                  <S.TrackPlayDislikeSvg alt="dislike">
                     <use xlinkHref="/img/icon/sprite.svg#icon-dislike"></use>
-                  </svg>
+                  </S.TrackPlayDislikeSvg>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="bar__volume-block volume">
-            <div className="volume__content">
-              <div className="volume__image">
-                <svg className="volume__svg" alt="volume">
+              </S.TrackPlayLikeDis>
+            </S.PlayerTrackPlay>
+          </S.BarPlayer>
+          <S.BarVolumeBlock>
+            <S.VolumeContent>
+              <S.VolumeImage>
+                <S.VolumeSvg alt="volume">
                   <use xlinkHref="/img/icon/sprite.svg#icon-volume"></use>
-                </svg>
-              </div>
+                </S.VolumeSvg>
+              </S.VolumeImage>
               <div className="volume__progress _btn">
                 <input
                   className="volume__progress-line _btn"
@@ -82,11 +84,11 @@ function MusicPlayer() {
                   name="range"
                 />
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </S.VolumeContent>
+          </S.BarVolumeBlock>
+        </S.BarPlayerBlock>
+      </S.BarContent>
+    </S.Bar>
   );
 }
 

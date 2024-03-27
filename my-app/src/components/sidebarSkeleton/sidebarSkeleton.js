@@ -1,18 +1,19 @@
 import React from "react";
+import * as S from '../sidebar/Sidebar.styles'
 const skeletonCount = [1, 2, 3];
 
 export default function SidebarSkeleton() {
   return (
-    <div className="sidebar__list">
+    <S.Sidebarlist>
       {skeletonCount.map((id) => (
-        <div className="sidebar__item">
+        <S.SidebarItem>
           <img
             src="/img/skeleton/250x150.svg"
             key={id}
             alt="Скелетон плейлиста подборки"
           ></img>
-        </div>
+        </S.SidebarItem>
       ))}
-    </div>
+    </S.Sidebarlist>
   );
 }

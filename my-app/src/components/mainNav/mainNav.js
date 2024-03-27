@@ -2,19 +2,21 @@ import { useState } from "react";
 import logo from "../../logo.png";
 import Burger from "../burger/burger";
 import BurgerMenu from "../burgerMenu/burgerMenu";
-import './mainNav.css'
+import * as S from './MainNav.Stales'
+
+
 function MainNav() {
   const [visible, setVisible] = useState(false);
   const toggleVisibility = () => setVisible(!visible);
 
   return (
-    <nav className="main__nav nav">
-      <div className="nav__logo logo">
-        <img className="logo__image" src={logo} alt="logo" />
-      </div>
+    <S.MainNav>
+      <S.NavLogo>
+        <S.LogoImage src={logo} alt="logo" />
+      </S.NavLogo>
       <Burger onClick={toggleVisibility} />
       {visible && <BurgerMenu />}
-    </nav>
+    </S.MainNav>
   );
 }
 
