@@ -15,6 +15,8 @@ export const ContentTitle = styled.div`
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 24px;
+  
+  
 `;
 export const PlaylistTittleCol = styled.div`
   font-style: normal;
