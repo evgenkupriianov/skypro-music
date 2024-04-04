@@ -1,34 +1,18 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import "./styles/App.css";
-import CenterBlock from "./components/CenterBlock/CenterBlock";
-import Sidebar from "./components/sidebar/sidebar";
-import MusicPlayer from "./components/musicPlayer/musicPlayer";
-import MusicPlayerSkeleton from "./components/musicPlayerSkeleton/musicPlayerSkeleton";
-import MainNav from "./components/mainNav/mainNav";
+import * as S from "./styles.js"
+import { AppRoutes } from "./routes.jsx";
+import { useState } from "react";
 
 function App() {
-  // Псевдозагрузка
-  const [load, setLoad] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoad(false);
-    }, 2000);
-  }, []);
+    // Активация аудиоплеера и трека внутри
+    const [activePlayer, setActivePlayer] = useState(null);
 
   return (
-    <div className="wrapper">
-      <div className="container">
-        <main className="main">
-          <MainNav />
-          <CenterBlock load={load}/>
-          <Sidebar load={load}/>
-        </main>
-        {load ? <MusicPlayerSkeleton /> : <MusicPlayer />}
-        <footer className="footer"></footer>
-      </div>
-    </div>
+    <>
+    <S.GlobalStyle />
+    <AppRoutes activePlayer={activePlayer} setActivePlayer={setActivePlayer}/>
+    </>
   );
 }
 export default App;
