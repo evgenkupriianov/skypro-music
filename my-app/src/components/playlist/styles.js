@@ -41,6 +41,8 @@ export const PlaylistTittleCol04 = styled(PlaylistTittleCol)`
   text-align: start;
 `;
 export const ContentPlaylist = styled.div`
+  height: 450px;
+  scrollbar-width: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
