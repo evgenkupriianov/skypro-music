@@ -5,7 +5,6 @@ export default function PlaylistContent({arr , setActivePlayer}) {
 
   // Обновление состоаяния activePlayer в MainPage
   const clickItem = (item) => { setActivePlayer(item);}
-
   const PlayListItems = arr.map((item) => (
     <S.PlaylistItem key={item.id} onClick={() => clickItem(item)}>
       <S.PlaylistTrack >
@@ -16,10 +15,10 @@ export default function PlaylistContent({arr , setActivePlayer}) {
             </S.PlaylistTitleSvg>
           </S.TrackTitleImage>
           <div>
-            <S.TrackTitleLink href="http://">
+            <S.TrackTitle>
               {item.name}
               <S.TrackTitleSpan> {item.comment}</S.TrackTitleSpan>
-            </S.TrackTitleLink>
+            </S.TrackTitle>
           </div>
         </S.TrackTitleOnList>
         <S.TrackAuthorOnList>
