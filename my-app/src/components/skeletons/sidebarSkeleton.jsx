@@ -1,30 +1,16 @@
-import * as S from "../sidebar/styles.js";
+import AuthPage from "../../components/AuthPage/AuthPage.jsx";
+import { UserContext } from "../../components/context/userContext.js";
+import LoginWindow from "../../components/login/loginWindow.jsx";
+import { EasyBackground } from "../../styles";
 
-import React from "react";
-export default function SidebarSkeleton() {
+export const LoginPage = () => {
   return (
-    <S.MainSidebar>
-      <S.SidebarPersonal>
-        <S.SidebarPersonalName>Sergey.Ivanov</S.SidebarPersonalName>
-        <S.SidebarIcon>
-          <svg alt="logout">
-            <use xlinkHref="img/icon/sprite.svg#logout"></use>
-          </svg>
-        </S.SidebarIcon>
-      </S.SidebarPersonal>
-      <S.SidebarBlock>
-        <S.SidebarList>
-          <S.SidebarItem>
-            <img src="/img/skeleton/250x150.svg"></img>
-          </S.SidebarItem>
-          <S.SidebarItem>
-            <img src="/img/skeleton/250x150.svg"></img>
-          </S.SidebarItem>
-          <S.SidebarItem>
-            <img src="/img/skeleton/250x150.svg"></img>
-          </S.SidebarItem>
-        </S.SidebarList>
-      </S.SidebarBlock>
-    </S.MainSidebar>
+    <EasyBackground>
+    {/* Страница из репозитория  */}
+      <AuthPage isLoginMode={true}/>
+
+    {/* Самодельная страница */}
+    {/* <LoginWindow/> */}
+    </EasyBackground>
   );
-}
+};
