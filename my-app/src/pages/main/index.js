@@ -30,7 +30,6 @@ export const MainPage = ({ activePlayer, setActivePlayer }) => {
       });
   }, []);
 
-  
   return (
     <S.Wrapper>
       <S.Container>
