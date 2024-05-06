@@ -41,7 +41,7 @@ export const MainPage = ({ activePlayer, setActivePlayer }) => {
           ) : (
             <TrackList tracks={tracks} setActivePlayer={setActivePlayer} error={error}/>
           )}
-          {load ? <SidebarSkeleton /> : <Sidebar />}
+          {load ? <sidebarSkeleton /> : <Sidebar />}
         </S.Main>
         {load ? (
           <AudioPlayerSkeleton />
