@@ -30,7 +30,6 @@ export const MainPage = ({ activePlayer, setActivePlayer }) => {
       });
   }, []);
 
-  
   return (
     <S.Wrapper>
       <S.Container>
@@ -41,7 +40,7 @@ export const MainPage = ({ activePlayer, setActivePlayer }) => {
           ) : (
             <TrackList tracks={tracks} setActivePlayer={setActivePlayer} error={error}/>
           )}
-          {load ? <SidebarSkeleton /> : <Sidebar />}
+          {load ? <sidebarSkeleton /> : <Sidebar />}
         </S.Main>
         {load ? (
           <AudioPlayerSkeleton />
