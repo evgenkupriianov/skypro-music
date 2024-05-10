@@ -1,8 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import * as S from "./styles.js";
 import { useEffect, useState } from "react";
-import signUp_fetch from "../API/signUp-fetch.js";
-import login_fetch from "./../API/login-fetch.js";
+import signUp_fetch from "../../API/signUp-fetch.js";
+import login_fetch from "../../API/login-fetch.js";
 import setCookie from "./../setCookie.js";
 import { useUserContext } from "../context/userContext.js";
 
