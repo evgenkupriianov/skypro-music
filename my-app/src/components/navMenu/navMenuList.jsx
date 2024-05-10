@@ -1,5 +1,4 @@
 import * as S from "./styles.js";
-import "./styles.css";
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { deleteCookie } from "../setCookie.js";

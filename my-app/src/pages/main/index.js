@@ -5,10 +5,10 @@ import AudioPlayer from "../../components/audioPlayer/audioPlayer.jsx";
 import AudioPlayerSkeleton from "../../components/skeletons/audioPlayerSkeleton.jsx";
 import NavMenu from "../../components/navMenu/navMenu.jsx";
 import Sidebar from "../../components/sidebar/sidebar.jsx";
-import SidebarSkeleton from "../../components/skeletons/sidebarSkeleton.jsx";
 import TrackList from "../../components/tracklist/trackList.jsx";
 import TrackListSkeleton from "../../components/skeletons/trackListSkeleton.jsx";
-import getAllTracks from "../../components/API/getAllTracks.js";
+import getAllTracks from "../../API/getAllTracks.js";
+import SidebarSkeleton from "../../components/skeletons/SidebarSkeleton";
 
 export const MainPage = ({ activePlayer, setActivePlayer }) => {
 
@@ -40,7 +40,7 @@ export const MainPage = ({ activePlayer, setActivePlayer }) => {
           ) : (
             <TrackList tracks={tracks} setActivePlayer={setActivePlayer} error={error}/>
           )}
-          {load ? <sidebarSkeleton /> : <Sidebar />}
+          {load ? <SidebarSkeleton /> : <Sidebar />}
         </S.Main>
         {load ? (
           <AudioPlayerSkeleton />
