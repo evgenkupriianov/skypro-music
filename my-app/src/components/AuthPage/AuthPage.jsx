@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import signUp_fetch from "../../API/signUp-fetch.js";
 import login_fetch from "../../API/login-fetch.js";
 import setCookie from "./../setCookie.js";
-import { useUserContext } from "../context/userContext.js";
+import { useUserContext } from "../../context/userContext.js";
 
 export default function AuthPage({ isLoginMode = true }) {
   const userContext = useUserContext();

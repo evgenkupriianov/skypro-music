@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import * as S from "./styles";
 import React from "react";
 import { deleteCookie } from "../setCookie.js";
-import { useUserContext } from "../context/userContext.js";
+import { useUserContext } from "../../context/userContext.js";
 
 export default function Sidebar() {
 

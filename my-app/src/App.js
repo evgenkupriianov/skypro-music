@@ -2,7 +2,7 @@ import React from "react";
 import * as S from "./styles.js";
 import { AppRoutes } from "./routes.jsx";
 import { useState } from "react";
-import { UserContext } from "./components/context/userContext.js";
+import { UserContext } from "./context/userContext.js";
 import { getCookie } from "./components/setCookie.js";
 
 function App() {
