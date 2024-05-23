@@ -1,5 +1,5 @@
 import * as S from "./styles";
-import logo from "//img/logo_modal-copy.png";
+import logo from "./logo_modal-copy.png";
 import { Link } from "react-router-dom";
 import setCookie from "../setCookie.js";
 import { useNavigate } from "react-router-dom";
