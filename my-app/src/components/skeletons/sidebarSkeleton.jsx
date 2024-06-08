@@ -1,6 +1,6 @@
 import * as S from "../sidebar/styles.js";
 import React from "react";
-export default function SidebarSkeleton() {
+export default function sidebarSkeleton() {
   return (
     <S.MainSidebar>
       <S.SidebarPersonal>
