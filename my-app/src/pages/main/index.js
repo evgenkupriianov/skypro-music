@@ -12,6 +12,7 @@ import SidebarSkeleton from "../../components/skeletons/sidebarSkeleton.jsx";
 
 export const MainPage = ({ activePlayer, setActivePlayer }) => {
 
+  
   // Загрузка всех треков из API
   const [load, setLoad] = useState(true);
   const [tracks, setTracks] = useState([]);
