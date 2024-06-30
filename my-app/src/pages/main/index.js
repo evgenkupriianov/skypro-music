@@ -8,10 +8,11 @@ import Sidebar from "../../components/sidebar/sidebar.jsx";
 import TrackList from "../../components/tracklist/trackList.jsx";
 import TrackListSkeleton from "../../components/skeletons/trackListSkeleton.jsx";
 import getAllTracks from "../../API/getAllTracks.js";
-import SidebarSkeleton from "../../components/skeletons/SidebarSkeleton";
+import SidebarSkeleton from "../../components/skeletons/sidebarSkeleton.jsx";
 
 export const MainPage = ({ activePlayer, setActivePlayer }) => {
 
+  
   // Загрузка всех треков из API
   const [load, setLoad] = useState(true);
   const [tracks, setTracks] = useState([]);
