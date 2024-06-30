@@ -1,5 +1,4 @@
 import * as S from "./styles";
-import logo from "//img/logo_modal-copy.png";
 import  setCookie  from "../setCookie.js";
 import { useNavigate } from "react-router-dom";
 
@@ -13,7 +12,7 @@ export default function SignUpWindow() {
   };
   return (
     <S.LoginContainer onSubmit={onSubmit}>
-      <S.LoginLogoImg alt="logo" src={logo}></S.LoginLogoImg>
+      <S.LoginLogoImg alt="logo" src="logo_modal-copy.png"></S.LoginLogoImg>
       <S.LoginInput placeholder="Почта" type="mail" />
       <S.LoginInput placeholder="Пароль" type="password" />
       <S.LoginInput placeholder="Подтвердите пароль" type="password" />
